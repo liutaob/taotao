@@ -1,4 +1,0 @@
-#购物车在cookie中保存的key
-CART_KEY=TT_CART
-#过期时间 七天
-CART_EXPIER=604800

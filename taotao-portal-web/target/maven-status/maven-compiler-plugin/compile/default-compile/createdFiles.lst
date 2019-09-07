@@ -1,5 +1,0 @@
-com\taotao\portal\pojo\ADNode.class
-com\taotao\portal\controller\ErrorPageController.class
-com\taotao\portal\exception\GlobalExceptionResolver.class
-com\taotao\portal\pojo\ScrollADNode.class
-com\taotao\portal\controller\IndexController.class
