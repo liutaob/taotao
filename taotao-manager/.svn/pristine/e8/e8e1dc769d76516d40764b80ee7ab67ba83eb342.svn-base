@@ -1,0 +1,137 @@
+package com.taotao.service.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.taotao.common.pojo.EasyUIDataGridResult;
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.mapper.TbItemParamExMapper;
+import com.taotao.mapper.TbItemParamItemMapper;
+import com.taotao.mapper.TbItemParamMapper;
+import com.taotao.model.TbItemParamModel;
+import com.taotao.pojo.TbItemParam;
+import com.taotao.pojo.TbItemParamExample;
+import com.taotao.pojo.TbItemParamExample.Criteria;
+import com.taotao.pojo.TbItemParamItem;
+import com.taotao.pojo.TbItemParamItemExample;
+import com.taotao.service.ItemParamService;
+
+/**
+ * @author liut
+ * @date 下午8:15:13
+ */
+@Service("itemParamService")
+public class ItemParamServiceImpl implements ItemParamService {
+	
+	@Autowired
+	private TbItemParamMapper tbItemParamMapper;
+	@Autowired
+	//tb_item_param_item表 区别于其他商品分类itemCatid 这个是商品itemId
+	private TbItemParamItemMapper tbItemParamItemMapper;
+	@Autowired
+	//扩展的规格参数类 解决分页显示时商品类目为空问题
+	private TbItemParamExMapper tbItemParamExMapper;
+	
+	/* (non-Javadoc)
+	 * @see com.taotao.service.ItemService#getItemById(long)
+	 *	 根据id查询商品规格参数
+	 */
+	@Override
+	public TbItemParam getItemParamById(long id) {
+		TbItemParam itemParam = tbItemParamMapper.selectByPrimaryKey(id);
+		return itemParam;
+	}
+	
+	/* (non-Javadoc)
+	 * @see com.taotao.service.ItemParamService#getItemList(int, int)
+	 * 	分页展示商品规格参数
+	 */
+	@Override
+	public EasyUIDataGridResult getItemParamList(int page, int rows) {
+		//设置分页信息
+		PageHelper.startPage(page, rows);
+		//执行查询
+		List<TbItemParamModel> list = tbItemParamExMapper.selectItemParamList();
+		PageInfo<TbItemParamModel> pageInfo = new PageInfo<TbItemParamModel>(list);
+		//取查询结果
+		EasyUIDataGridResult result = new EasyUIDataGridResult();
+		result.setRows(list);
+		result.setTotal(pageInfo.getTotal());
+		return result;
+	}
+	
+	/* (non-Javadoc)
+	 * @see com.taotao.service.ItemService#getItemDetailById(long)
+	 * 	根据商品id获取商品规格（tb_item_param_item表）
+	 */
+	@Override
+	public TaotaoResult getItemParamItemById(long itemId) {
+		TbItemParamItemExample example = new TbItemParamItemExample();
+		com.taotao.pojo.TbItemParamItemExample.Criteria criteria = example.createCriteria();
+		criteria.andItemIdEqualTo(itemId);
+		//根据商品id限制查询条件 带大字段的查找到商品规格	每一个商品和规格参数一一对应
+		List<TbItemParamItem> list = tbItemParamItemMapper.selectByExampleWithBLOBs(example);
+		if(list.size() > 0) {
+			return TaotaoResult.ok(list.get(0));
+		}else {
+			return TaotaoResult.ok();
+		}
+	}
+	
+	/* (non-Javadoc)
+	 * @see com.taotao.service.ItemParamService#getItemParamByItemCatId(long)
+	 * 	判断选择的目录是否已经添加过规格
+	 */
+	@Override
+	public TaotaoResult getItemParamByItemCatId(long itemCatId) {
+		TbItemParamExample example = new TbItemParamExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andItemCatIdEqualTo(itemCatId);
+		List<TbItemParam> list = tbItemParamMapper.selectByExampleWithBLOBs(example);
+		if(list.size() != 0) {
+			return TaotaoResult.ok(list.get(0));
+		}else {
+			return TaotaoResult.ok();
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see com.taotao.service.ItemParamService#addItemParam(java.lang.Long, java.lang.String)
+	 * 	新增商品规格参数
+	 */
+	@Override
+	public TaotaoResult addItemParam(Long itemCatId, String paramData) {
+		TbItemParam itemParam = new TbItemParam();
+		//补全规格参数属性
+		itemParam.setCreated(new Date());
+		itemParam.setUpdated(new Date());
+		itemParam.setItemCatId(itemCatId);
+		itemParam.setParamData(paramData);
+		//插入数据库
+		tbItemParamMapper.insert(itemParam);
+		return TaotaoResult.ok();
+	}
+
+	/* (non-Javadoc)
+	 * @see com.taotao.service.ItemParamService#deleteItemParam(java.lang.String)
+	 * 	删除规格参数
+	 */
+	@Override
+	public TaotaoResult deleteItemParam(String ids) {
+		//将选中的规格参数切割
+		String[] split = ids.split("[,]");
+		for (String string : split) {
+			//根据规格参数id删除数据库
+			tbItemParamMapper.deleteByPrimaryKey(Long.parseLong(string));
+		}
+		//返回结果
+		return TaotaoResult.ok();
+	}
+
+
+}

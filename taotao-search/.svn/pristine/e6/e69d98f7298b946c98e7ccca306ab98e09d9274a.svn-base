@@ -1,0 +1,16 @@
+package com.taotao.search.mapper;
+
+import java.util.List;
+
+import com.taotao.common.pojo.SearchItem;
+
+/**
+ * 	商品搜索mapper
+ * @author liut
+ * @date 2019年2月18日下午7:16:59
+ */
+public interface SearchItemMapper {
+
+	List<SearchItem> getItemList();
+	SearchItem getItemById(long id);
+}

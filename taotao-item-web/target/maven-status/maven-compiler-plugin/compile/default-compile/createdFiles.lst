@@ -1,0 +1,5 @@
+com\taotao\item\controller\ErrorPageController.class
+com\taotao\item\listener\ItemAddMessageListener.class
+com\taotao\item\exception\GlobalExceptionResolver.class
+com\taotao\item\controller\HtmlGenController.class
+com\taotao\item\controller\ItemController.class

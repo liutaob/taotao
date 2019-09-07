@@ -1,0 +1,21 @@
+package com.taotao.order.service;
+
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.order.pojo.OrderInfo;
+
+/**
+ * 订单Service接口
+ * @author liut
+ * @date 2019年3月3日下午7:07:47
+ */
+public interface OrderService {
+
+	/**
+	 * 创建订单
+	 * @autor liut
+	 * @date  2019年3月3日下午7:07:59
+	 * @params
+	 * @return TaotaoResult
+	 */
+	TaotaoResult createOrder(OrderInfo orderInfo);
+}

@@ -1,0 +1,37 @@
+/**
+ * 
+ */
+package com.taotao.service;
+
+import com.taotao.common.pojo.EasyUIDataGridResult;
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.pojo.TbItem;
+
+/**
+ * @author liut
+ *
+ */
+public interface ItemService {
+	//根据id查询商品
+	TbItem getItemById(long id);
+	
+	//商品展示
+	EasyUIDataGridResult getItemList(int page,int rows);
+	
+	//添加商品
+	TaotaoResult addItem(TbItem tbItem,String desc,String paramData);
+	
+	//加载商品描述
+	TaotaoResult getItemDescById(long id);
+	
+	//修改商品
+	TaotaoResult updateItem(TbItem tbItem,String desc,String paramData);
+	
+	TaotaoResult deleteItem(String ids);
+	
+	//商品上架
+	TaotaoResult reshelfItem(String ids);
+	
+	//商品下架
+	TaotaoResult instockItem(String ids);
+}

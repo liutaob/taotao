@@ -1,0 +1,166 @@
+package com.taotao.content.service.impl;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.taotao.common.pojo.EasyUITreeNode;
+import com.taotao.common.pojo.TaotaoResult;
+import com.taotao.content.service.ContentCategoryService;
+import com.taotao.mapper.TbContentCategoryMapper;
+import com.taotao.pojo.TbContentCategory;
+import com.taotao.pojo.TbContentCategoryExample;
+import com.taotao.pojo.TbContentCategoryExample.Criteria;
+
+/**
+ * 	内容分类管理
+ * @author liut
+ * @date 上午11:22:31
+ */
+@Service
+public class ContentCategoryServiceImpl implements ContentCategoryService {
+	
+	@Autowired
+	private TbContentCategoryMapper tbContentCategoryMapper;
+	
+	/* (non-Javadoc)
+	 * @see com.taotao.content.service.ContentCategoryService#getContentCategoryList(long)
+	 * 	内容分类类目展示
+	 */
+	@Override
+	public List<EasyUITreeNode> getContentCategoryList(long parentId) {
+		//根据父节点id查询子节点列表
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		//设置查询条件
+		Criteria criteria = example.createCriteria();
+		//设置parentid
+		criteria.andParentIdEqualTo(parentId);
+		//执行查询
+		List<TbContentCategory> list = tbContentCategoryMapper.selectByExample(example);
+		//转换成EasyUITreeNode列表
+		List<EasyUITreeNode> resultList = new ArrayList<>();
+		for (TbContentCategory tbContentCategory : list) {
+			EasyUITreeNode node = new EasyUITreeNode();
+			node.setId(tbContentCategory.getId());
+			node.setText(tbContentCategory.getName());
+			//如果节点下有子节点“closed”，如果没有子节点“open”
+			node.setState(tbContentCategory.getIsParent()?"closed":"open");
+			//添加到节点列表
+			resultList.add(node);
+		}
+		return resultList;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.taotao.content.service.ContentCategoryService#addContentCategory(java.lang.Long, java.lang.String)
+	 * 	新增内容分类
+	 */
+	@Override
+	public TaotaoResult addContentCategory(Long parentId, String name) {
+		TbContentCategory tbContentCategory = new TbContentCategory();
+		//补全内容分类属性
+		tbContentCategory.setCreated(new Date());
+		tbContentCategory.setUpdated(new Date());
+		tbContentCategory.setName(name);
+		tbContentCategory.setParentId(parentId);
+		tbContentCategory.setStatus(1);
+		tbContentCategory.setSortOrder(1);
+		tbContentCategory.setIsParent(false);
+		//插入数据库
+		tbContentCategoryMapper.insert(tbContentCategory);
+		TbContentCategory parent = tbContentCategoryMapper.selectByPrimaryKey(parentId);
+		if(!parent.getIsParent()) {
+			//如果父节点为叶子节点改为父节点
+			parent.setIsParent(true);
+			//更新父节点
+			tbContentCategoryMapper.updateByPrimaryKey(parent);
+		}
+		//返回结果
+		return TaotaoResult.ok(tbContentCategory);
+	}
+
+	/* (non-Javadoc)
+	 * @see com.taotao.content.service.ContentCategoryService#updateContentCategory(java.lang.Long, java.lang.String)
+	 * 	更新内容分类重命名
+	 */
+	@Override
+	public TaotaoResult updateContentCategory(Long id, String name) {
+		//根据id查找到要重命名的结点
+		TbContentCategory tbContentCategory = tbContentCategoryMapper.selectByPrimaryKey(id);
+		//重命名时间
+		tbContentCategory.setUpdated(new Date());
+		//重命名结点名字
+		tbContentCategory.setName(name);
+		//更新结点
+		tbContentCategoryMapper.updateByPrimaryKey(tbContentCategory);
+		//返回结果
+		return TaotaoResult.ok();
+	}
+
+	/* (non-Javadoc)
+	 * @see com.taotao.content.service.ContentCategoryService#deleteContentCategory(java.lang.Long, java.lang.Long)
+	 * 	删除内容分类节点
+	 */
+	@Override
+	public TaotaoResult deleteContentCategory(Long id) {
+		TbContentCategory contentCategory = tbContentCategoryMapper.selectByPrimaryKey(id);
+		//如果不是父节点	
+		if(!contentCategory.getIsParent()) {
+			//查找到父节点
+			TbContentCategory parent = tbContentCategoryMapper.selectByPrimaryKey(contentCategory.getParentId());
+			//根据父节点id查询子节点列表
+			TbContentCategoryExample example = new TbContentCategoryExample();
+			//设置查询条件
+			Criteria criteria = example.createCriteria();
+			//设置parentid
+			criteria.andParentIdEqualTo(contentCategory.getParentId());
+			//执行查询
+			List<TbContentCategory> list = tbContentCategoryMapper.selectByExample(example);
+			//如果所属父结点下只有该结点，将其删除，并将父节点变为叶子结点，否则删除该叶子结点
+			if(list.size() == 1) {
+				parent.setIsParent(false);
+				tbContentCategoryMapper.updateByPrimaryKey(parent);
+			}
+		}else{//如果是父节点1,不让删除 2，递归删
+			//1不删，不做任何处理
+			
+			//2递归删除该父节点下所有子结点
+			diGuiDelete(id);
+		}
+		//删除该结点
+		tbContentCategoryMapper.deleteByPrimaryKey(id);
+		return TaotaoResult.ok();
+	}
+	
+	/**
+	 * 	递归删除父节点以及所有叶子结点
+	 * @autor liut
+	 * @date  下午2:30:24
+	 * @params
+	 * @return void
+	 */
+	private void diGuiDelete(long id) {
+		//根据父节点id查询子节点列表
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		//设置查询条件
+		Criteria criteria = example.createCriteria();
+		//设置parentid
+		criteria.andParentIdEqualTo(id);
+		//执行查询
+		List<TbContentCategory> list = tbContentCategoryMapper.selectByExample(example);
+		for (TbContentCategory tbContentCategory : list) {
+			if(tbContentCategory.getIsParent()) {
+				TbContentCategory parent = tbContentCategoryMapper.selectByPrimaryKey(tbContentCategory.getParentId());
+				parent.setIsParent(false);
+				tbContentCategoryMapper.updateByPrimaryKey(parent);
+				diGuiDelete(tbContentCategory.getId());
+			}
+			//若是叶子结点删除叶子结点，或删除最后一个由空父结点变成的叶子结点
+			tbContentCategoryMapper.deleteByPrimaryKey(tbContentCategory.getId());
+		}
+	}
+
+}

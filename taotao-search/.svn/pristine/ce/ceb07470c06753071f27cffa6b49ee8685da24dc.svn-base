@@ -1,0 +1,13 @@
+package com.taotao.search.service;
+
+import com.taotao.common.pojo.TaotaoResult;
+
+/**
+ * 	商品导入索引库
+ * @author liut
+ * @date 2019年2月19日上午10:46:09
+ */
+public interface SearchItemService {
+	
+	public TaotaoResult importItemsToIndex();
+}
