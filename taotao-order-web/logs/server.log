@@ -5235,3 +5235,1301 @@ java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\d
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-09-24 17:14:30,045 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-order-web': initialization started
+
+
+[INFO ] 2019-09-24 17:14:30,173 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-order-web-servlet': startup date [Tue Sep 24 17:14:30 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 17:14:30,634 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-09-24 17:14:36,681 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-09-24 17:14:37,206 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-09-24 17:14:37,289 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-09-24 17:14:39,653 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, data: {com.taotao.service.ItemCatService=empty://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316432541 empty://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316432541 dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314766158, com.taotao.order.service.OrderService=empty://192.168.56.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderList,getOrderById&pid=12496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691701920 empty://192.168.56.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderList,getOrderById&pid=12496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691701920 dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=7217&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1556687350075, com.taotao.content.service.ContentCategoryService=empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170214491 empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170214491 dubbo://192.168.25.133:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=7112&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168901400, com.taotao.service.ItemService=empty://192.168.10.33/com.taotao.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423705 empty://192.168.10.33/com.taotao.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423705 dubbo://192.168.25.133:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314758278, com.taotao.service.ItemDescService=empty://192.168.10.33/com.taotao.service.ItemDescService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316412456 empty://192.168.10.33/com.taotao.service.ItemDescService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316412456 dubbo://192.168.25.133:20880/com.taotao.service.ItemDescService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314766898, com.taotao.content.service.CacheService=empty://192.168.25.1/com.taotao.content.service.CacheService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169102165 empty://192.168.25.1/com.taotao.content.service.CacheService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169102165 dubbo://192.168.25.133:20881/com.taotao.content.service.CacheService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=7112&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168906342, com.taotao.content.service.ContentService=empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170209040 empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170209040 dubbo://192.168.25.133:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=7112&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168906119, com.taotao.service.ItemParamService=empty://192.168.10.33/com.taotao.service.ItemParamService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,deleteItemParam,getItemParamById,getItemParamItemByItemId&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423976 empty://192.168.10.33/com.taotao.service.ItemParamService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,deleteItemParam,getItemParamById,getItemParamItemByItemId&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423976 dubbo://192.168.25.133:20880/com.taotao.service.ItemParamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,getItemParamById,deleteItemParam,getItemParamItemByItemId&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314766599, com.taotao.search.service.SearchService=empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9276&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691655144 empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9276&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691655144 dubbo://192.168.25.133:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=7173&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1556687359758, com.taotao.search.service.SearchItemService=empty://192.168.25.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169113022 empty://192.168.25.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169113022 dubbo://192.168.25.133:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=7122&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168908894, com.taotao.sso.service.UserService=empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=6724&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169088982 empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=6724&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169088982 dubbo://192.168.25.133:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,checkData,getUserByToken,login,register&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168901424}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-09-24 17:14:39,883 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+
+[INFO ] 2019-09-24 17:14:39,884 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-6C9UO49
+
+
+[INFO ] 2019-09-24 17:14:39,886 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_162
+
+
+[INFO ] 2019-09-24 17:14:39,887 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-09-24 17:14:39,888 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\JDK\jre
+
+
+[INFO ] 2019-09-24 17:14:39,891 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\eclipse_workpace\apache-maven-3.3.9\boot\._plexus-classworlds-2.5.2.jar;D:\eclipse_workpace\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-09-24 17:14:39,895 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;D:\XShell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\apache-maven-3.3.9\bin;D:\JDK\bin;D:\mysql-5.7.16-winx64\bin;D:\redis;D:\SVN\bin;D:\TortoiseSVN\bin;D:\Git\cmd;D:\TortoiseGit\bin;D:\MongoDB\bin;G:\netcat-win32-1.11\netcat-1.11;D:\nodejs\;D:\nodejs\node_modules\npm\node_modules\node_global;G:\Ruby26-x64\bin;D:\Ruby26-x64\bin;C:\Users\liut\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\liut\AppData\Local\Programs\Python\Python37\;C:\Users\liut\AppData\Local\Microsoft\WindowsApps;D:\Fiddler;C:\Users\liut\AppData\Roaming\npm;C:\Users\liut\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2019-09-24 17:14:39,940 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-09-24 17:14:40,096 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\liut\AppData\Local\Temp\
+
+
+[INFO ] 2019-09-24 17:14:40,099 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-09-24 17:14:40,101 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-09-24 17:14:40,102 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-09-24 17:14:40,102 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-09-24 17:14:40,102 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=liut
+
+
+[INFO ] 2019-09-24 17:14:40,103 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\liut
+
+
+[INFO ] 2019-09-24 17:14:40,104 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=G:\taotao\taotao-order-web
+
+
+[INFO ] 2019-09-24 17:14:40,107 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.130:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@17b98c1b
+
+
+[INFO ] 2019-09-24 17:14:40,285 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)
+Opening socket connection to server 192.168.25.130/192.168.25.130:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-09-24 17:14:40,317 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)
+Socket connection established to 192.168.25.130/192.168.25.130:2181, initiating session
+
+
+[INFO ] 2019-09-24 17:14:40,342 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)
+Session establishment complete on server 192.168.25.130/192.168.25.130:2181, sessionid = 0x16d626dfaa30008, negotiated timeout = 30000
+
+
+[INFO ] 2019-09-24 17:14:40,344 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-09-24 17:14:40,524 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:40,608 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:40,659 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152, urls: [dubbo://192.168.25.133:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,checkData,getUserByToken,login,register&pid=7175&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314739530, empty://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152, empty://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:42,249 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20883 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x9f96bbad, /192.168.25.1:58465 => /192.168.25.133:20883]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:42,253 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20883, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:42,617 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.sso.service.UserService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316479152, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:42,701 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/info/{orderId}]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.gotoOrderDeail(java.lang.String,org.springframework.ui.Model)
+
+
+[INFO ] 2019-09-24 17:14:42,719 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/order-list]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.showOrderList()
+
+
+[INFO ] 2019-09-24 17:14:42,721 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/create],methods=[POST]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.createOrder(com.taotao.order.pojo.OrderInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+
+
+[INFO ] 2019-09-24 17:14:42,723 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/order-cart]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.showOrderCart(javax.servlet.http.HttpServletRequest)
+
+
+[INFO ] 2019-09-24 17:14:42,726 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/list]}" onto public com.taotao.common.pojo.EasyUIDataGridResult com.taotao.order.controller.OrderCartController.listOrder(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+
+
+[INFO ] 2019-09-24 17:14:42,727 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/changeStatus],methods=[POST]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.order.controller.OrderCartController.changeOrderStatus(com.taotao.order.pojo.OrderStatus)
+
+
+[INFO ] 2019-09-24 17:14:45,952 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-order-web-servlet': startup date [Tue Sep 24 17:14:30 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 17:14:46,305 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-order-web-servlet': startup date [Tue Sep 24 17:14:30 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 17:14:46,764 method:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:267)
+Detected @ExceptionHandler methods in globalExceptionResolver
+
+
+[INFO ] 2019-09-24 17:14:47,238 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:47,381 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:47,585 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=7186&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314739593, empty://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, empty://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:47,590 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20884 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xfd88e803, /192.168.25.1:58470 => /192.168.25.133:20884]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:47,590 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20884, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:47,592 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.order.service.OrderService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316487200, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:48,051 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-order-web': initialization completed in 17941 ms
+
+
+[INFO ] 2019-09-24 17:20:28,805 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:21)
+进入全局异常处理器。。
+
+
+[ERROR] 2019-09-24 17:20:28,845 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常
+java.lang.RuntimeException: org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123479' for key 'PRIMARY'
+### The error may involve com.taotao.dao.TbOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_order (order_id, payment, payment_type,        post_fee, status, create_time,        update_time, payment_time, consign_time,        end_time, close_time, shipping_name,        shipping_code, user_id, buyer_message,        buyer_nick, buyer_rate)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123479' for key 'PRIMARY'
+; SQL []; Duplicate entry '123479' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123479' for key 'PRIMARY'
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123479' for key 'PRIMARY'
+### The error may involve com.taotao.dao.TbOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_order (order_id, payment, payment_type,        post_fee, status, create_time,        update_time, payment_time, consign_time,        end_time, close_time, shipping_name,        shipping_code, user_id, buyer_message,        buyer_nick, buyer_rate)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123479' for key 'PRIMARY'
+; SQL []; Duplicate entry '123479' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123479' for key 'PRIMARY'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:240)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:51)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy14.insert(Unknown Source)
+	at com.taotao.order.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy19.createOrder(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper0.invokeMethod(Wrapper0.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '123479' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4208)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4140)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2597)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2758)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2826)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1302)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:62)
+	at com.sun.proxy.$Proxy32.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:44)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy30.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:152)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 49 more
+
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:108)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2019-09-24 17:20:51,607 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:21)
+进入全局异常处理器。。
+
+
+[ERROR] 2019-09-24 17:20:51,657 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常
+java.lang.RuntimeException: org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '27' for key 'PRIMARY'
+### The error may involve com.taotao.dao.TbOrderItemDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_order_item (id, item_id, order_id,        num, title, price, total_fee,        pic_path)     values (?, ?, ?,        ?, ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '27' for key 'PRIMARY'
+; SQL []; Duplicate entry '27' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '27' for key 'PRIMARY'
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '27' for key 'PRIMARY'
+### The error may involve com.taotao.dao.TbOrderItemDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_order_item (id, item_id, order_id,        num, title, price, total_fee,        pic_path)     values (?, ?, ?,        ?, ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '27' for key 'PRIMARY'
+; SQL []; Duplicate entry '27' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '27' for key 'PRIMARY'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:240)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:51)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at com.taotao.order.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy19.createOrder(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper0.invokeMethod(Wrapper0.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '27' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4208)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4140)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2597)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2758)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2826)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1302)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:62)
+	at com.sun.proxy.$Proxy32.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:44)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy30.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:152)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 49 more
+
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:108)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2019-09-24 17:22:24,386 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:21)
+进入全局异常处理器。。
+
+
+[ERROR] 2019-09-24 17:22:24,460 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常
+java.lang.RuntimeException: org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '28' for key 'PRIMARY'
+### The error may involve com.taotao.dao.TbOrderItemDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_order_item (id, item_id, order_id,        num, title, price, total_fee,        pic_path)     values (?, ?, ?,        ?, ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '28' for key 'PRIMARY'
+; SQL []; Duplicate entry '28' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '28' for key 'PRIMARY'
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '28' for key 'PRIMARY'
+### The error may involve com.taotao.dao.TbOrderItemDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tb_order_item (id, item_id, order_id,        num, title, price, total_fee,        pic_path)     values (?, ?, ?,        ?, ?, ?, ?,        ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '28' for key 'PRIMARY'
+; SQL []; Duplicate entry '28' for key 'PRIMARY'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '28' for key 'PRIMARY'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:371)
+	at com.sun.proxy.$Proxy12.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:240)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:51)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:52)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at com.taotao.order.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy19.createOrder(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper0.invokeMethod(Wrapper0.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '28' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:408)
+	at com.mysql.jdbc.Util.getInstance(Util.java:383)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1049)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4208)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4140)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2597)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2758)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2826)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2082)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1302)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:493)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:62)
+	at com.sun.proxy.$Proxy32.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:44)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:69)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:105)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy30.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:152)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:358)
+	... 49 more
+
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:108)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2019-09-24 17:29:36,209 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [empty://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:29:36,332 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0xfd88e803, /192.168.25.1:58470 => /192.168.25.133:20884], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:29:36,393 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.133:20884,url:dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316487200, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:30:30,930 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=7515&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569317429556], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:30:30,969 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20884 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x09b23507, /192.168.25.1:59431 => /192.168.25.133:20884]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:30:30,976 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20884, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:41:17,061 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [empty://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:41:17,461 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x09b23507, /192.168.25.1:59431 => /192.168.25.133:20884], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:41:17,497 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.133:20884,url:dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316487200, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:42:16,453 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=7515&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569317429556], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:42:16,530 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20884 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x1c13dd5e, /192.168.25.1:60357 => /192.168.25.133:20884]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:42:16,538 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20884, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:43:47,011 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [empty://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:43:47,024 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x1c13dd5e, /192.168.25.1:60357 => /192.168.25.133:20884], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:43:47,036 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.133:20884,url:dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316487200, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:45:14,514 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:21)
+进入全局异常处理器。。
+
+
+[ERROR] 2019-09-24 17:45:14,557 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常
+com.alibaba.dubbo.rpc.RpcException: Forbid consumer 192.168.10.33 access service com.taotao.order.service.OrderService from registry 192.168.25.130:2181 use dubbo version 2.5.3, Please check registry access list (whitelist/blacklist).
+	at com.alibaba.dubbo.registry.integration.RegistryDirectory.doList(RegistryDirectory.java:579)
+	at com.alibaba.dubbo.rpc.cluster.directory.AbstractDirectory.list(AbstractDirectory.java:73)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.list(AbstractClusterInvoker.java:260)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:69)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy1.createOrder(proxy1.java)
+	at com.taotao.order.controller.OrderCartController.createOrder(OrderCartController.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-09-24 17:45:22,649 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=7515&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569317429556], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:45:22,698 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20884 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x36f4bff9, /192.168.25.1:60559 => /192.168.25.133:20884]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:45:22,700 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20884, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[WARN ] 2019-09-24 17:48:31,172 method:com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:79)
+ [DUBBO] Although retry the method createOrder in the service com.taotao.order.service.OrderService was successful by the provider 192.168.25.133:20884, but there have been failed providers [192.168.25.133:20884] (1/1) from the registry 192.168.25.130:2181 on the consumer 192.168.10.33 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: createOrder, provider: dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316487200, cause: Waiting server-side response timeout. start time: 2019-09-24 17:43:25.634, end time: 2019-09-24 17:48:25.661, client elapsed: 1 ms, server elapsed: 300004 ms, timeout: 300000 ms, request: Request [id=49, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=createOrder, parameterTypes=[class com.taotao.order.pojo.OrderInfo], arguments=[OrderInfo [Hash = 1981234277, orderId=null, payment=1368.80, paymentType=1, postFee=null, status=null, createTime=null, updateTime=null, paymentTime=null, consignTime=null, endTime=null, closeTime=null, shippingName=null, shippingCode=null, userId=59, buyerMessage=null, buyerNick=null, buyerRate=null, serialVersionUID=1]], attachments={path=com.taotao.order.service.OrderService, interface=com.taotao.order.service.OrderService, version=0.0.0, timeout=300000}]], channel: 192.168.10.33:0 -> /192.168.25.133:20884, dubbo version: 2.5.3, current host: 192.168.10.33
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: createOrder, provider: dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316487200, cause: Waiting server-side response timeout. start time: 2019-09-24 17:43:25.634, end time: 2019-09-24 17:48:25.661, client elapsed: 1 ms, server elapsed: 300004 ms, timeout: 300000 ms, request: Request [id=49, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=createOrder, parameterTypes=[class com.taotao.order.pojo.OrderInfo], arguments=[OrderInfo [Hash = 1981234277, orderId=null, payment=1368.80, paymentType=1, postFee=null, status=null, createTime=null, updateTime=null, paymentTime=null, consignTime=null, endTime=null, closeTime=null, shippingName=null, shippingCode=null, userId=59, buyerMessage=null, buyerNick=null, buyerRate=null, serialVersionUID=1]], attachments={path=com.taotao.order.service.OrderService, interface=com.taotao.order.service.OrderService, version=0.0.0, timeout=300000}]], channel: 192.168.10.33:0 -> /192.168.25.133:20884
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy1.createOrder(proxy1.java)
+	at com.taotao.order.controller.OrderCartController.createOrder(OrderCartController.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout. start time: 2019-09-24 17:43:25.634, end time: 2019-09-24 17:48:25.661, client elapsed: 1 ms, server elapsed: 300004 ms, timeout: 300000 ms, request: Request [id=49, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=createOrder, parameterTypes=[class com.taotao.order.pojo.OrderInfo], arguments=[OrderInfo [Hash = 1981234277, orderId=null, payment=1368.80, paymentType=1, postFee=null, status=null, createTime=null, updateTime=null, paymentTime=null, consignTime=null, endTime=null, closeTime=null, shippingName=null, shippingCode=null, userId=59, buyerMessage=null, buyerNick=null, buyerRate=null, serialVersionUID=1]], attachments={path=com.taotao.order.service.OrderService, interface=com.taotao.order.service.OrderService, version=0.0.0, timeout=300000}]], channel: 192.168.10.33:0 -> /192.168.25.133:20884
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:107)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 55 more
+
+
+[INFO ] 2019-09-24 17:57:26,663 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [empty://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:26,756 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x36f4bff9, /192.168.25.1:60559 => /192.168.25.133:20884], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:26,797 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152, urls: [empty://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=providers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:26,804 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x9f96bbad, /192.168.25.1:58465 => /192.168.25.133:20883], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:26,809 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.133:20884,url:dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316487200, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:26,812 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.133:20883,url:dubbo://192.168.25.133:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-order-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.sso.service.UserService&methods=loginOut,checkData,getUserByToken,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316479152, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:02:52,874 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152, urls: [dubbo://192.168.25.133:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,checkData,getUserByToken,login,register&pid=7877&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569319365843], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[WARN ] 2019-09-24 18:02:54,885 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.10.33
+java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-09-24 18:02:55,013 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20883 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x28b0429d, /192.168.25.1:61679 => /192.168.25.133:20883]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:02:55,038 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20883, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:03:07,802 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316487200, urls: [dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=7894&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569319383220], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:03:07,807 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20884 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x42c34ed5, /192.168.25.1:61696 => /192.168.25.133:20884]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:03:07,807 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20884, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 21:58:59,871 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-order-web': initialization started
+
+
+[INFO ] 2019-09-24 21:58:59,992 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-order-web-servlet': startup date [Tue Sep 24 21:58:59 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 21:59:00,210 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-09-24 21:59:01,715 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-09-24 21:59:02,626 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-09-24 21:59:02,651 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-09-24 21:59:04,770 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, data: {com.taotao.service.ItemCatService=empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333529911 empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333529911 dubbo://192.168.25.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=13732&side=provider&timeout=300000&timestamp=1569333336301, com.taotao.order.service.OrderService=empty://192.168.25.1:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=34068&side=provider&timeout=300000&timestamp=1569333427546, com.taotao.content.service.ContentCategoryService=empty://192.168.25.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=29712&side=provider&timeout=300000&timestamp=1569333347197, com.taotao.service.ItemService=empty://192.168.25.1/com.taotao.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333526691 empty://192.168.25.1/com.taotao.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333526691 dubbo://192.168.25.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=13732&side=provider&timeout=300000&timestamp=1569333328939, com.taotao.service.ItemDescService=empty://192.168.25.1/com.taotao.service.ItemDescService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333520438 empty://192.168.25.1/com.taotao.service.ItemDescService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333520438 dubbo://192.168.25.1:20880/com.taotao.service.ItemDescService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=13732&side=provider&timeout=300000&timestamp=1569333336415, com.taotao.content.service.CacheService=empty://192.168.25.1:20881/com.taotao.content.service.CacheService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=29712&side=provider&timeout=300000&timestamp=1569333352526, com.taotao.content.service.ContentService=empty://192.168.25.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,updateContent,deleteContent,addContent&pid=29712&side=provider&timeout=300000&timestamp=1569333352475, com.taotao.service.ItemParamService=empty://192.168.25.1/com.taotao.service.ItemParamService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,getItemParamById,deleteItemParam,getItemParamItemByItemId&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333526899 empty://192.168.25.1/com.taotao.service.ItemParamService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,getItemParamById,deleteItemParam,getItemParamItemByItemId&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333526899 dubbo://192.168.25.1:20880/com.taotao.service.ItemParamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,getItemParamById,deleteItemParam,getItemParamItemByItemId&pid=13732&side=provider&timeout=300000&timestamp=1569333336369, com.taotao.search.service.SearchService=empty://192.168.25.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=21436&side=provider&timeout=300000&timestamp=1569333370556, com.taotao.search.service.SearchItemService=empty://192.168.25.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=21436&side=provider&timeout=300000&timestamp=1569333365446, com.taotao.sso.service.UserService=empty://192.168.25.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=38404&side=provider&timeout=300000&timestamp=1569333444597}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-09-24 21:59:05,000 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-09-24 21:59:09,532 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+
+[INFO ] 2019-09-24 21:59:09,533 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-6C9UO49
+
+
+[INFO ] 2019-09-24 21:59:09,534 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_162
+
+
+[INFO ] 2019-09-24 21:59:09,534 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-09-24 21:59:09,535 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\JDK\jre
+
+
+[INFO ] 2019-09-24 21:59:09,535 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\eclipse_workpace\apache-maven-3.3.9\boot\._plexus-classworlds-2.5.2.jar;D:\eclipse_workpace\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\lib\idea_rt.jar;C:\Users\liut\.IntelliJIdea2019.1\system\captureAgent\debugger-agent.jar
+
+
+[INFO ] 2019-09-24 21:59:09,536 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;D:\XShell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\apache-maven-3.3.9\bin;D:\JDK\bin;D:\mysql-5.7.16-winx64\bin;D:\redis;D:\SVN\bin;D:\TortoiseSVN\bin;D:\Git\cmd;D:\TortoiseGit\bin;D:\MongoDB\bin;G:\netcat-win32-1.11\netcat-1.11;D:\nodejs\;D:\nodejs\node_modules\npm\node_modules\node_global;G:\Ruby26-x64\bin;D:\Ruby26-x64\bin;C:\Users\liut\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\liut\AppData\Local\Programs\Python\Python37\;C:\Users\liut\AppData\Local\Microsoft\WindowsApps;D:\Fiddler;C:\Users\liut\AppData\Roaming\npm;C:\Users\liut\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2019-09-24 21:59:09,537 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\liut\AppData\Local\Temp\
+
+
+[INFO ] 2019-09-24 21:59:09,538 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-09-24 21:59:09,540 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-09-24 21:59:09,540 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-09-24 21:59:09,541 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-09-24 21:59:09,541 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=liut
+
+
+[INFO ] 2019-09-24 21:59:09,541 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\liut
+
+
+[INFO ] 2019-09-24 21:59:09,542 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=G:\taotao\taotao-order-web
+
+
+[INFO ] 2019-09-24 21:59:09,544 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.130:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@2df06b6b
+
+
+[INFO ] 2019-09-24 21:59:09,759 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)
+Opening socket connection to server 192.168.25.130/192.168.25.130:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-09-24 21:59:09,764 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)
+Socket connection established to 192.168.25.130/192.168.25.130:2181, initiating session
+
+
+[INFO ] 2019-09-24 21:59:09,776 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)
+Session establishment complete on server 192.168.25.130/192.168.25.130:2181, sessionid = 0x16d63762d6f0017, negotiated timeout = 30000
+
+
+[INFO ] 2019-09-24 21:59:09,779 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-09-24 21:59:09,870 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-order-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333544492, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:09,964 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333544492, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:10,000 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333544492, urls: [dubbo://192.168.25.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=38404&side=provider&timeout=300000&timestamp=1569333444597, empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333544492, empty://192.168.25.1/com.taotao.sso.service.UserService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333544492], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:10,959 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20883 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xb02df34c, /192.168.25.1:55599 => /192.168.25.1:20883]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:10,960 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.25.1 connect to the server /192.168.25.1:20883, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:11,336 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.sso.service.UserService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333544492, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:11,496 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/order-cart]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.showOrderCart(javax.servlet.http.HttpServletRequest)
+
+
+[INFO ] 2019-09-24 21:59:11,545 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/info/{orderId}]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.gotoOrderDeail(java.lang.String,org.springframework.ui.Model)
+
+
+[INFO ] 2019-09-24 21:59:11,546 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/order-list]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.showOrderList()
+
+
+[INFO ] 2019-09-24 21:59:11,548 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/list]}" onto public com.taotao.common.pojo.EasyUIDataGridResult com.taotao.order.controller.OrderCartController.listOrder(java.lang.Integer,java.lang.Integer,javax.servlet.http.HttpServletRequest)
+
+
+[INFO ] 2019-09-24 21:59:11,550 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/create],methods=[POST]}" onto public java.lang.String com.taotao.order.controller.OrderCartController.createOrder(com.taotao.order.pojo.OrderInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+
+
+[INFO ] 2019-09-24 21:59:11,551 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/order/changeStatus],methods=[POST]}" onto public com.taotao.common.pojo.TaotaoResult com.taotao.order.controller.OrderCartController.changeOrderStatus(com.taotao.order.pojo.OrderStatus)
+
+
+[INFO ] 2019-09-24 21:59:13,811 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-order-web-servlet': startup date [Tue Sep 24 21:58:59 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 21:59:14,873 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-order-web-servlet': startup date [Tue Sep 24 21:58:59 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 21:59:15,311 method:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:267)
+Detected @ExceptionHandler methods in globalExceptionResolver
+
+
+[INFO ] 2019-09-24 21:59:15,608 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:15,920 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:15,952 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581, urls: [dubbo://192.168.25.1:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=34068&side=provider&timeout=300000&timestamp=1569333427546, empty://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581, empty://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:15,958 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20884 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x972a4e2f, /192.168.25.1:55609 => /192.168.25.1:20884]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:15,958 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.25.1 connect to the server /192.168.25.1:20884, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:15,960 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.order.service.OrderService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333555581, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:18,026 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-order-web': initialization completed in 18109 ms
+
+
+[INFO ] 2019-09-24 22:03:16,025 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1096)
+Client session timed out, have not heard from server in 20023ms for sessionid 0x16d63762d6f0017, closing socket connection and attempting reconnect
+
+
+[INFO ] 2019-09-24 22:03:33,668 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2019-09-24 22:03:34,673 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)
+Opening socket connection to server 192.168.25.130/192.168.25.130:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-09-24 22:03:34,676 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)
+Socket connection established to 192.168.25.130/192.168.25.130:2181, initiating session
+
+
+[INFO ] 2019-09-24 22:03:34,685 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)
+Session establishment complete on server 192.168.25.130/192.168.25.130:2181, sessionid = 0x16d63762d6f0017, negotiated timeout = 30000
+
+
+[INFO ] 2019-09-24 22:03:34,686 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-09-24 22:04:17,499 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581, urls: [empty://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 22:04:17,509 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x972a4e2f, /192.168.25.1:55609 => /192.168.25.1:20884], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 22:04:18,028 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.1:20884,url:dubbo://192.168.25.1:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333555581, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 22:04:33,313 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333555581, urls: [dubbo://192.168.25.1:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=34068&side=provider&timeout=300000&timestamp=1569333427546], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 22:04:33,321 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20884 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x0618ee86, /192.168.25.1:56131 => /192.168.25.1:20884]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 22:04:33,323 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.25.1 connect to the server /192.168.25.1:20884, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 22:05:11,867 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:21)
+进入全局异常处理器。。
+
+
+[ERROR] 2019-09-24 22:05:11,882 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常
+java.lang.NullPointerException
+	at com.taotao.order.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy38.createOrder(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper0.invokeMethod(Wrapper0.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-09-24 22:08:34,183 method:com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:79)
+ [DUBBO] Although retry the method createOrder in the service com.taotao.order.service.OrderService was successful by the provider 192.168.25.1:20884, but there have been failed providers [192.168.25.1:20884] (1/1) from the registry 192.168.25.130:2181 on the consumer 192.168.25.1 using the dubbo version 2.5.3. Last error is: Invoke remote method timeout. method: createOrder, provider: dubbo://192.168.25.1:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333555581, cause: Waiting server-side response timeout by scan timer. start time: 2019-09-24 22:03:33.672, end time: 2019-09-24 22:08:33.679, client elapsed: 39 ms, server elapsed: 299966 ms, timeout: 300000 ms, request: Request [id=4, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=createOrder, parameterTypes=[class com.taotao.order.pojo.OrderInfo], arguments=[OrderInfo [Hash = 745567951, orderId=null, payment=0.00, paymentType=1, postFee=null, status=null, createTime=null, updateTime=null, paymentTime=null, consignTime=null, endTime=null, closeTime=null, shippingName=null, shippingCode=null, userId=63, buyerMessage=null, buyerNick=null, buyerRate=null, serialVersionUID=1]], attachments={path=com.taotao.order.service.OrderService, interface=com.taotao.order.service.OrderService, version=0.0.0, timeout=300000}]], channel: 192.168.25.1:0 -> /192.168.25.1:20884, dubbo version: 2.5.3, current host: 192.168.25.1
+com.alibaba.dubbo.rpc.RpcException: Invoke remote method timeout. method: createOrder, provider: dubbo://192.168.25.1:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order-web&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=29372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333555581, cause: Waiting server-side response timeout by scan timer. start time: 2019-09-24 22:03:33.672, end time: 2019-09-24 22:08:33.679, client elapsed: 39 ms, server elapsed: 299966 ms, timeout: 300000 ms, request: Request [id=4, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=createOrder, parameterTypes=[class com.taotao.order.pojo.OrderInfo], arguments=[OrderInfo [Hash = 745567951, orderId=null, payment=0.00, paymentType=1, postFee=null, status=null, createTime=null, updateTime=null, paymentTime=null, consignTime=null, endTime=null, closeTime=null, shippingName=null, shippingCode=null, userId=63, buyerMessage=null, buyerNick=null, buyerRate=null, serialVersionUID=1]], attachments={path=com.taotao.order.service.OrderService, interface=com.taotao.order.service.OrderService, version=0.0.0, timeout=300000}]], channel: 192.168.25.1:0 -> /192.168.25.1:20884
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:99)
+	at com.alibaba.dubbo.rpc.protocol.AbstractInvoker.invoke(AbstractInvoker.java:144)
+	at com.alibaba.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:74)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:48)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:77)
+	at com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:227)
+	at com.alibaba.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:72)
+	at com.alibaba.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:52)
+	at com.alibaba.dubbo.common.bytecode.proxy1.createOrder(proxy1.java)
+	at com.taotao.order.controller.OrderCartController.createOrder(OrderCartController.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:871)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.alibaba.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2019-09-24 22:03:33.672, end time: 2019-09-24 22:08:33.679, client elapsed: 39 ms, server elapsed: 299966 ms, timeout: 300000 ms, request: Request [id=4, version=2.0.0, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=createOrder, parameterTypes=[class com.taotao.order.pojo.OrderInfo], arguments=[OrderInfo [Hash = 745567951, orderId=null, payment=0.00, paymentType=1, postFee=null, status=null, createTime=null, updateTime=null, paymentTime=null, consignTime=null, endTime=null, closeTime=null, shippingName=null, shippingCode=null, userId=63, buyerMessage=null, buyerNick=null, buyerRate=null, serialVersionUID=1]], attachments={path=com.taotao.order.service.OrderService, interface=com.taotao.order.service.OrderService, version=0.0.0, timeout=300000}]], channel: 192.168.25.1:0 -> /192.168.25.1:20884
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.returnFromResponse(DefaultFuture.java:188)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:110)
+	at com.alibaba.dubbo.remoting.exchange.support.DefaultFuture.get(DefaultFuture.java:84)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboInvoker.doInvoke(DubboInvoker.java:96)
+	... 55 more
+
+
+[INFO ] 2019-09-24 22:08:34,216 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:21)
+进入全局异常处理器。。
+
+
+[ERROR] 2019-09-24 22:08:34,220 method:com.taotao.order.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常
+java.lang.NullPointerException
+	at com.taotao.order.service.impl.OrderServiceImpl.createOrder(OrderServiceImpl.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy38.createOrder(Unknown Source)
+	at com.alibaba.dubbo.common.bytecode.Wrapper0.invokeMethod(Wrapper0.java)
+	at com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:46)
+	at com.alibaba.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:72)
+	at com.alibaba.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:53)
+	at com.alibaba.dubbo.rpc.filter.ExceptionFilter.invoke(ExceptionFilter.java:64)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:75)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:42)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:78)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ContextFilter.invoke(ContextFilter.java:60)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.GenericFilter.invoke(GenericFilter.java:112)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.ClassLoaderFilter.invoke(ClassLoaderFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.filter.EchoFilter.invoke(EchoFilter.java:38)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:91)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.reply(DubboProtocol.java:108)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.handleRequest(HeaderExchangeHandler.java:84)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchangeHandler.received(HeaderExchangeHandler.java:170)
+	at com.alibaba.dubbo.remoting.transport.DecodeHandler.received(DecodeHandler.java:52)
+	at com.alibaba.dubbo.remoting.transport.dispatcher.ChannelEventRunnable.run(ChannelEventRunnable.java:82)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

@@ -1234,3 +1234,529 @@ java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\d
 
 [INFO ] 2019-05-18 18:56:47,091 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
  [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170214663, urls: [dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=7102&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168917530, empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170214663, empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170214663], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 17:14:32,075 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-portal-web': initialization started
+
+
+[INFO ] 2019-09-24 17:14:32,305 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-portal-web-servlet': startup date [Tue Sep 24 17:14:32 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 17:14:32,463 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-09-24 17:14:37,711 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-09-24 17:14:38,532 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-09-24 17:14:38,566 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-09-24 17:14:40,633 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/error/{code}]}" onto public java.lang.String com.taotao.portal.controller.ErrorPageController.showPage(java.lang.String)
+
+
+[INFO ] 2019-09-24 17:14:40,647 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/index]}" onto public java.lang.String com.taotao.portal.controller.IndexController.showIndex(org.springframework.ui.Model)
+
+
+[INFO ] 2019-09-24 17:14:43,540 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-portal-web-servlet': startup date [Tue Sep 24 17:14:32 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 17:14:43,858 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-portal-web-servlet': startup date [Tue Sep 24 17:14:32 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 17:14:45,037 method:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:267)
+Detected @ExceptionHandler methods in globalExceptionResolver
+
+
+[INFO ] 2019-09-24 17:14:47,602 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, data: {com.taotao.service.ItemCatService=empty://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316432541 empty://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316432541 dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314766158, com.taotao.order.service.OrderService=empty://192.168.56.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderList,getOrderById&pid=12496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691701920 empty://192.168.56.1/com.taotao.order.service.OrderService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderList,getOrderById&pid=12496&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691701920 dubbo://192.168.25.133:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=7217&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1556687350075, com.taotao.content.service.ContentCategoryService=empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170214491 empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170214491 dubbo://192.168.25.133:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=7112&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168901400, com.taotao.service.ItemService=empty://192.168.10.33/com.taotao.service.ItemService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423705 empty://192.168.10.33/com.taotao.service.ItemService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423705 dubbo://192.168.25.133:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314758278, com.taotao.service.ItemDescService=empty://192.168.10.33/com.taotao.service.ItemDescService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316412456 empty://192.168.10.33/com.taotao.service.ItemDescService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316412456 dubbo://192.168.25.133:20880/com.taotao.service.ItemDescService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314766898, com.taotao.content.service.CacheService=empty://192.168.25.1/com.taotao.content.service.CacheService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169102165 empty://192.168.25.1/com.taotao.content.service.CacheService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169102165 dubbo://192.168.25.133:20881/com.taotao.content.service.CacheService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=7112&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168906342, com.taotao.content.service.ContentService=empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170209040 empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=11512&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558170209040 dubbo://192.168.25.133:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=7112&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168906119, com.taotao.search.service.SearchService=empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9276&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691655144 empty://192.168.56.1/com.taotao.search.service.SearchService?application=taotao-search-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=9276&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1556691655144 dubbo://192.168.25.133:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=7173&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1556687359758, com.taotao.service.ItemParamService=empty://192.168.10.33/com.taotao.service.ItemParamService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,deleteItemParam,getItemParamById,getItemParamItemByItemId&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423976 empty://192.168.10.33/com.taotao.service.ItemParamService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,deleteItemParam,getItemParamById,getItemParamItemByItemId&pid=18072&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316423976 dubbo://192.168.25.133:20880/com.taotao.service.ItemParamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,getItemParamById,deleteItemParam,getItemParamItemByItemId&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314766599, com.taotao.search.service.SearchItemService=empty://192.168.25.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169113022 empty://192.168.25.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=10920&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1558169113022 dubbo://192.168.25.133:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=7122&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1558168908894, com.taotao.sso.service.UserService=empty://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=configurators&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152 empty://192.168.10.33/com.taotao.sso.service.UserService?application=taotao-order-web&category=routers&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=32408&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316479152 dubbo://192.168.25.133:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,checkData,getUserByToken,login,register&pid=7175&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314739530}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-09-24 17:14:48,629 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-09-24 17:14:48,888 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+
+[INFO ] 2019-09-24 17:14:48,888 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-6C9UO49
+
+
+[INFO ] 2019-09-24 17:14:48,890 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_162
+
+
+[INFO ] 2019-09-24 17:14:48,890 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-09-24 17:14:48,898 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\JDK\jre
+
+
+[INFO ] 2019-09-24 17:14:48,898 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\eclipse_workpace\apache-maven-3.3.9\boot\._plexus-classworlds-2.5.2.jar;D:\eclipse_workpace\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\lib\idea_rt.jar
+
+
+[INFO ] 2019-09-24 17:14:48,898 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;D:\XShell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\apache-maven-3.3.9\bin;D:\JDK\bin;D:\mysql-5.7.16-winx64\bin;D:\redis;D:\SVN\bin;D:\TortoiseSVN\bin;D:\Git\cmd;D:\TortoiseGit\bin;D:\MongoDB\bin;G:\netcat-win32-1.11\netcat-1.11;D:\nodejs\;D:\nodejs\node_modules\npm\node_modules\node_global;G:\Ruby26-x64\bin;D:\Ruby26-x64\bin;C:\Users\liut\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\liut\AppData\Local\Programs\Python\Python37\;C:\Users\liut\AppData\Local\Microsoft\WindowsApps;D:\Fiddler;C:\Users\liut\AppData\Roaming\npm;C:\Users\liut\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2019-09-24 17:14:48,900 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\liut\AppData\Local\Temp\
+
+
+[INFO ] 2019-09-24 17:14:48,900 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-09-24 17:14:48,900 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-09-24 17:14:48,900 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-09-24 17:14:48,900 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-09-24 17:14:48,903 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=liut
+
+
+[INFO ] 2019-09-24 17:14:48,903 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\liut
+
+
+[INFO ] 2019-09-24 17:14:48,903 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=G:\taotao\taotao-portal-web
+
+
+[INFO ] 2019-09-24 17:14:48,908 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.130:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7cd59dd
+
+
+[INFO ] 2019-09-24 17:14:49,233 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)
+Opening socket connection to server 192.168.25.130/192.168.25.130:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-09-24 17:14:49,238 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)
+Socket connection established to 192.168.25.130/192.168.25.130:2181, initiating session
+
+
+[INFO ] 2019-09-24 17:14:49,258 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)
+Session establishment complete on server 192.168.25.130/192.168.25.130:2181, sessionid = 0x16d626dfaa3000a, negotiated timeout = 30000
+
+
+[INFO ] 2019-09-24 17:14:49,263 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-09-24 17:14:49,407 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:49,529 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:49,624 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386, urls: [dubbo://192.168.25.133:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=7154&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314758582, empty://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386, empty://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:50,618 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20881 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x6784128e, /192.168.25.1:58501 => /192.168.25.133:20881]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:50,620 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20881, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:51,511 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.content.service.ContentService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-portal-web&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316486386, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,193 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,218 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,273 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554, urls: [dubbo://192.168.25.133:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=7154&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314745030, empty://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554, empty://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,277 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.content.service.ContentCategoryService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-portal-web&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316491554, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,522 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,590 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,627 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348, urls: [dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=7145&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569314766158, empty://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348, empty://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,629 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20880 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xcaab7ec3, /192.168.25.1:58502 => /192.168.25.133:20880]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,631 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20880, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,631 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.service.ItemCatService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-portal-web&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316493348, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:14:53,802 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-portal-web': initialization completed in 21694 ms
+
+
+[INFO ] 2019-09-24 17:57:21,582 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.133:20880,url:dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-portal-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316493348, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:22,532 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348, urls: [empty://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:23,589 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386, urls: [empty://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=providers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:23,599 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554, urls: [empty://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=providers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 17:57:23,623 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x6784128e, /192.168.25.1:58501 => /192.168.25.133:20881], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[WARN ] 2019-09-24 17:57:23,626 method:com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:160)
+ [DUBBO] client reconnect to 192.168.25.133:20880 find error . url: dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-portal-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316493348, dubbo version: 2.5.3, current host: 192.168.10.33
+com.alibaba.dubbo.remoting.RemotingException: client(url: dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-portal-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316493348) failed to connect to server /192.168.25.133:20880, error message is:Connection refused: no further information: /192.168.25.133:20880
+	at com.alibaba.dubbo.remoting.transport.netty.NettyClient.doConnect(NettyClient.java:124)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:280)
+	at com.alibaba.dubbo.remoting.transport.AbstractClient$1.run(AbstractClient.java:145)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: no further information: /192.168.25.133:20880
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.connect(NioClientBoss.java:150)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.processSelectedKeys(NioClientBoss.java:105)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:79)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.jboss.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	... 3 more
+
+
+[INFO ] 2019-09-24 17:57:23,706 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.133:20881,url:dubbo://192.168.25.133:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-portal-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569316486386, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:02:59,520 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316491554, urls: [dubbo://192.168.25.133:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=7848&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569319372256], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[WARN ] 2019-09-24 18:02:59,846 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.10.33
+java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-09-24 18:02:59,970 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20881 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xa99c8237, /192.168.25.1:61684 => /192.168.25.133:20881]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:03:00,004 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20881, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:03:00,078 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.content.service.ContentService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,addContent,updateContent&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316486386, urls: [dubbo://192.168.25.133:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,updateContent,deleteContent,addContent&pid=7848&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569319379590], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:03:13,017 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.10.33/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=11372&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569316493348, urls: [dubbo://192.168.25.133:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=7838&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1569319392910], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[WARN ] 2019-09-24 18:03:13,024 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.10.33
+java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-09-24 18:03:13,031 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.133:20880 from NettyClient 192.168.10.33 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xa9924b8e, /192.168.25.1:61705 => /192.168.25.133:20880]], dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[INFO ] 2019-09-24 18:03:13,044 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.10.33 connect to the server /192.168.25.133:20880, dubbo version: 2.5.3, current host: 192.168.10.33
+
+
+[WARN ] 2019-09-24 18:03:13,049 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.10.33
+java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-09-24 18:03:13,071 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.10.33
+java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2019-09-24 18:03:13,075 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.10.33
+java.io.IOException: Can not lock the registry cache file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2019-09-24 21:59:39,555 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'taotao-portal-web': initialization started
+
+
+[INFO ] 2019-09-24 21:59:39,669 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'taotao-portal-web-servlet': startup date [Tue Sep 24 21:59:39 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 21:59:39,780 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2019-09-24 21:59:41,104 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2019-09-24 21:59:42,042 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [resource/resource.properties]
+
+
+[INFO ] 2019-09-24 21:59:42,111 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2019-09-24 21:59:43,897 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/error/{code}]}" onto public java.lang.String com.taotao.portal.controller.ErrorPageController.showPage(java.lang.String)
+
+
+[INFO ] 2019-09-24 21:59:43,914 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/index]}" onto public java.lang.String com.taotao.portal.controller.IndexController.showIndex(org.springframework.ui.Model)
+
+
+[INFO ] 2019-09-24 21:59:44,970 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-portal-web-servlet': startup date [Tue Sep 24 21:59:39 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 21:59:45,120 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'taotao-portal-web-servlet': startup date [Tue Sep 24 21:59:39 CST 2019]; root of context hierarchy
+
+
+[INFO ] 2019-09-24 21:59:45,257 method:org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:267)
+Detected @ExceptionHandler methods in globalExceptionResolver
+
+
+[INFO ] 2019-09-24 21:59:46,875 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\liut\.dubbo\dubbo-registry-192.168.25.130.cache, data: {com.taotao.service.ItemCatService=empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560829 empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560829 dubbo://192.168.25.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=13732&side=provider&timeout=300000&timestamp=1569333336301, com.taotao.order.service.OrderService=empty://192.168.25.1:20884/com.taotao.order.service.OrderService?anyhost=true&application=taotao-order&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.order.service.OrderService&methods=createOrder,changeOrderStatus,getOrderById,getOrderList&pid=34068&side=provider&timeout=300000&timestamp=1569333427546, com.taotao.content.service.ContentCategoryService=empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560434 empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,updateContentCategory,deleteContentCategory,getContentCategoryList&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560434 dubbo://192.168.25.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=29712&side=provider&timeout=300000&timestamp=1569333347197, com.taotao.service.ItemService=empty://192.168.25.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560917 empty://192.168.25.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560917 dubbo://192.168.25.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=reshelfItem,getItemList,addItem,deleteItem,instockItem,getItemById,updateItem,getItemDescById&pid=13732&side=provider&timeout=300000&timestamp=1569333328939, com.taotao.service.ItemDescService=empty://192.168.25.1/com.taotao.service.ItemDescService?application=taotao-item-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333520438 empty://192.168.25.1/com.taotao.service.ItemDescService?application=taotao-item-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=32532&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333520438 dubbo://192.168.25.1:20880/com.taotao.service.ItemDescService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemDescService&methods=getItemDescById&pid=13732&side=provider&timeout=300000&timestamp=1569333336415, com.taotao.content.service.CacheService=empty://192.168.25.1/com.taotao.content.service.CacheService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333549887 empty://192.168.25.1/com.taotao.content.service.CacheService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333549887 dubbo://192.168.25.1:20881/com.taotao.content.service.CacheService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.CacheService&methods=deleteCache&pid=29712&side=provider&timeout=300000&timestamp=1569333352526, com.taotao.content.service.ContentService=empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,updateContent,addContent&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560621 empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,deleteContent,updateContent,addContent&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560621 dubbo://192.168.25.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,updateContent,deleteContent,addContent&pid=29712&side=provider&timeout=300000&timestamp=1569333352475, com.taotao.service.ItemParamService=empty://192.168.25.1/com.taotao.service.ItemParamService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,deleteItemParam,getItemParamById,getItemParamItemByItemId&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333561021 empty://192.168.25.1/com.taotao.service.ItemParamService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,deleteItemParam,getItemParamById,getItemParamItemByItemId&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333561021 dubbo://192.168.25.1:20880/com.taotao.service.ItemParamService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemParamService&methods=getItemParamItemById,getItemParamList,addItemParam,getItemParamByItemCatId,getItemParamById,deleteItemParam,getItemParamItemByItemId&pid=13732&side=provider&timeout=300000&timestamp=1569333336369, com.taotao.search.service.SearchService=empty://192.168.25.1:20882/com.taotao.search.service.SearchService?anyhost=true&application=taotao-search&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.search.service.SearchService&methods=search&pid=21436&side=provider&timeout=300000&timestamp=1569333370556, com.taotao.search.service.SearchItemService=empty://192.168.25.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560701 empty://192.168.25.1/com.taotao.search.service.SearchItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=36788&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333560701 dubbo://192.168.25.1:20882/com.taotao.search.service.SearchItemService?anyhost=true&application=taotao-search&dubbo=2.5.3&interface=com.taotao.search.service.SearchItemService&methods=deleteItemDocument,importItemsToIndex,addItemDocument&pid=21436&side=provider&timeout=300000&timestamp=1569333365446, com.taotao.sso.service.UserService=empty://192.168.25.1:20883/com.taotao.sso.service.UserService?anyhost=true&application=taotao-sso&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.sso.service.UserService&methods=loginOut,getUserByToken,checkData,login,register&pid=38404&side=provider&timeout=300000&timestamp=1569333444597}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2019-09-24 21:59:47,042 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2019-09-24 21:59:51,587 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+
+
+[INFO ] 2019-09-24 21:59:51,591 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=DESKTOP-6C9UO49
+
+
+[INFO ] 2019-09-24 21:59:51,592 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_162
+
+
+[INFO ] 2019-09-24 21:59:51,593 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2019-09-24 21:59:51,595 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\JDK\jre
+
+
+[INFO ] 2019-09-24 21:59:51,596 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\eclipse_workpace\apache-maven-3.3.9\boot\._plexus-classworlds-2.5.2.jar;D:\eclipse_workpace\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.2\lib\idea_rt.jar;C:\Users\liut\.IntelliJIdea2019.1\system\captureAgent\debugger-agent.jar
+
+
+[INFO ] 2019-09-24 21:59:51,597 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\JDK\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\oraclexe\app\oracle\product\10.2.0\server\bin;D:\XShell\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\apache-maven-3.3.9\bin;D:\JDK\bin;D:\mysql-5.7.16-winx64\bin;D:\redis;D:\SVN\bin;D:\TortoiseSVN\bin;D:\Git\cmd;D:\TortoiseGit\bin;D:\MongoDB\bin;G:\netcat-win32-1.11\netcat-1.11;D:\nodejs\;D:\nodejs\node_modules\npm\node_modules\node_global;G:\Ruby26-x64\bin;D:\Ruby26-x64\bin;C:\Users\liut\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\liut\AppData\Local\Programs\Python\Python37\;C:\Users\liut\AppData\Local\Microsoft\WindowsApps;D:\Fiddler;C:\Users\liut\AppData\Roaming\npm;C:\Users\liut\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2019-09-24 21:59:51,597 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\liut\AppData\Local\Temp\
+
+
+[INFO ] 2019-09-24 21:59:51,598 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2019-09-24 21:59:51,598 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2019-09-24 21:59:51,598 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2019-09-24 21:59:51,599 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2019-09-24 21:59:51,600 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=liut
+
+
+[INFO ] 2019-09-24 21:59:51,601 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\liut
+
+
+[INFO ] 2019-09-24 21:59:51,601 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=G:\taotao\taotao-portal-web
+
+
+[INFO ] 2019-09-24 21:59:51,604 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.25.130:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1efb6942
+
+
+[INFO ] 2019-09-24 21:59:51,696 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:975)
+Opening socket connection to server 192.168.25.130/192.168.25.130:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2019-09-24 21:59:51,700 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:852)
+Socket connection established to 192.168.25.130/192.168.25.130:2181, initiating session
+
+
+[INFO ] 2019-09-24 21:59:51,712 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1235)
+Session establishment complete on server 192.168.25.130/192.168.25.130:2181, sessionid = 0x16d63762d6f0019, negotiated timeout = 30000
+
+
+[INFO ] 2019-09-24 21:59:51,716 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2019-09-24 21:59:51,782 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333586035, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:51,890 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333586035, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:51,961 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333586035, urls: [dubbo://192.168.25.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,updateContent,deleteContent,addContent&pid=29712&side=provider&timeout=300000&timestamp=1569333352475, empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333586035, empty://192.168.25.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333586035], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,485 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20881 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x94d50b3e, /192.168.25.1:55692 => /192.168.25.1:20881]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,485 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.25.1 connect to the server /192.168.25.1:20881, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,731 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.content.service.ContentService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-portal-web&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentList,getContenListByCid,addContent,updateContent,deleteContent&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333586035, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,840 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593816, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,863 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593816, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,906 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593816, urls: [dubbo://192.168.25.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryById,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=29712&side=provider&timeout=300000&timestamp=1569333347197, empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593816, empty://192.168.25.1/com.taotao.content.service.ContentCategoryService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593816], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,910 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.content.service.ContentCategoryService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-portal-web&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333593816, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:53,977 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=consumers&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593926, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:54,191 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593926, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:54,234 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=providers,configurators,routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593926, urls: [dubbo://192.168.25.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=13732&side=provider&timeout=300000&timestamp=1569333336301, empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593926, empty://192.168.25.1/com.taotao.service.ItemCatService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1569333593926], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:54,238 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20880 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x927dd72a, /192.168.25.1:55693 => /192.168.25.1:20880]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:54,238 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient DESKTOP-6C9UO49/192.168.25.1 connect to the server /192.168.25.1:20880, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:54,242 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service com.taotao.service.ItemCatService from url zookeeper://192.168.25.130:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=taotao-portal-web&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getAllItemCatList,getItemCatList&pid=37324&revision=0.0.1-SNAPSHOT&side=consumer&timeout=300000&timestamp=1569333593926, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2019-09-24 21:59:54,558 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'taotao-portal-web': initialization completed in 14945 ms

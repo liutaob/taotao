@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
-	
+
 	<!-- 加载属性文件 -->
 	<context:property-placeholder location="classpath:resource/resource.properties"/>
 	<!-- 配置注解驱动 -->
@@ -36,15 +36,15 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="taotao-manager-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.130:2181"/>
-	<!-- 商品服务 -->	
-	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" />
-	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />
-	<dubbo:reference interface="com.taotao.service.ItemParamService" id="itemParamService" />
+	<!-- 商品服务 check=false不消费服务可启动成功，默认true则需先启动服务提供者-->
+	<dubbo:reference interface="com.taotao.service.ItemService" id="itemService" check="false"/>
+	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" check="false"/>
+	<dubbo:reference interface="com.taotao.service.ItemParamService" id="itemParamService" check="false"/>
 	<!-- 内容服务 -->
-	<dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService" />
-	<dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" />
+	<dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService" check="false"/>
+	<dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" check="false"/>
 	<!-- 内容缓存 -->
-	<dubbo:reference interface="com.taotao.content.service.CacheService" id="cacheService" />
+	<dubbo:reference interface="com.taotao.content.service.CacheService" id="cacheService" check="false"/>
 	<!-- 搜索服务 -->
-	<dubbo:reference interface="com.taotao.search.service.SearchItemService" id="searchItemService" />
+	<dubbo:reference interface="com.taotao.search.service.SearchItemService" id="searchItemService" check="false"/>
 </beans>

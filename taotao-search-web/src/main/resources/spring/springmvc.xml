@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
         http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
-	
+
 	<!-- 加载属性文件 -->
 	<context:property-placeholder location="classpath:resource/resource.properties"/>
 	<!-- 配置注解驱动 -->
@@ -25,7 +25,7 @@
 	<dubbo:application name="taotao-search-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.130:2181"/>
 	<!-- 调用搜索服务 -->
-	<dubbo:reference interface="com.taotao.search.service.SearchService" id="searchService" />
+	<dubbo:reference interface="com.taotao.search.service.SearchService" id="searchService" check="false"/>
 	<!-- 商品服务 搜索页面上方商品分类 -->
-	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />
-</beans>      
+	<dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" check="false"/>
+</beans>
